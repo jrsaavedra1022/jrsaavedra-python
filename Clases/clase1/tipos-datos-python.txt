@@ -1,0 +1,120 @@
+Tipos de datos en Python
+Enteros (int): en este grupo están todos los números, enteros y long:
+ejemplo: 1, 2.3, 2121, 2192, -123
+
+Booleanos (bool): Son los valores falso o verdadero, compatibles con todas las operaciones booleanas ( and, not, or ):
+ejemplo: True, False
+
+Cadenas (str): Son una cadena de texto :
+ejemplos: “Hola”, “¿Cómo estas?”
+
+Listas: Son un grupo o array de datos, puede contener cualquiera de los datos anteriores:
+ejemplos: [1,2,3, ”hola” , [1,2,3] ], [1,“Hola”,True ]
+
+Diccionarios: Son un grupo de datos que se acceden a partir de una clave:
+ejemplo: {“clave”:”valor”}, {“nombre”:”Fernando”}
+
+Tuplas: también son un grupo de datos igual que una lista con la diferencia que una tupla después de creada no se puede modificar.
+ejemplos: (1,2,3, ”hola” , (1,2,3) ), (1,“Hola”,True) (Pero jamás podremos cambiar los elementos dentro de esa Tupla)
+
+En Python trabajas con módulos y ficheros que usas para importar las librerías.
+
+-- longitud de una cadena len["key"]
+3
+
+-- type -> tipo de dato
+type(4)
+<  type int >
+
+-- conversión de un conjunto a una lista
+map(str, [1,2,3,4])
+['1', '2', '3', '4']
+
+-- redondear un flotante con x número o de decimales
+round(6.3243, 1)
+6.3
+
+-- Generar un rango en la lista
+range(5)
+[0,1,2,3,4]
+
+-- sumar un conjunto
+sum([1,2,4])
+7
+
+-- Organizar un conjunto
+sorted([5,2,1])
+[1,2,5]
+
+-- Conocer los comandos que le puedes aplicar a x tipo de datos:
+Li = [5, 2, 1]
+dir(Li)
+['append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+-- información sobre la librería
+help(sorted) 
+Aparecera la documentación
+
+
+-----------------------------------------
+****************************************
+CLASES
+*******************************************
+---------------------------------------------
+
+class Estudiante(object):
+	def __init__(self, nombre_r, edad_r):
+		self.nombre = nombre_r
+		self.edad = edad_r
+
+	def hola(self):
+		return "Mi nombre es %s y tengo %i" % (self.nombre, self.edad)
+
+e = Estudiante("Arturo", 21)
+print e.hola()
+ Mi nombre es Arturo y tengo 21
+
+
+ -- metodos especiales
+ cmp(self.otro)
+ Método llamado cuando utilizas los operadores de comparación para comprobar si tu objeto es menor, mayor o igual al objeto pasado como parámetro.
+
+ len(self)
+ Método llamado para comprobar la longitud del objeto. Lo usas, por ejemplo, cuando llamas la función len(obj) sobre nuestro código. Como es de suponer el método te debe devolver la longitud del objeto.
+
+ init(self.otro)
+ Es un constructor de nuestra clase, es decir, es un “método especial” que es llamas automáticamente cuando creas un objeto.
+
+
+ -- condicionales IF
+
+ if ( a > b ):
+ 	elementos 
+ elif ( a == b ): 
+ 	elementos 
+ else:
+ 	elementos
+
+-- ciclo FOR
+ for i in ____:
+ 	elementos
+
+Example:
+	for i in range(10):
+ 	print i
+
+-- Bucle WHILE
+ while (condición):
+ 	elementos
+
+Example: 
+ x = 0 
+ while x < 10: 
+ 	print x 
+ 	x += 1
+
+
+
+
+
+
